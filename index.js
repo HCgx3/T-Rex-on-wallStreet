@@ -2,8 +2,8 @@ const Discord = require('discord.js');
 const fetch = require('node-fetch');
 const bot = new Discord.Client({ disableEveryone: true });
 const fs = require("fs");
-const botsettings = require('./botsettings.json')
 require("./util/eventHandler")(bot)
+require('dotenv').config();
 
 bot.commands = new Discord.Collection();
 bot.aliases = new Discord.Collection();
